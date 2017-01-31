@@ -1,2 +1,3 @@
-# h1-stats
-HeartOne Stats
+CSANZ HeartOne Stats
+
+https://github.com/cardiacsociety/h1-stats
