@@ -2,22 +2,24 @@ $(document).ready(function() {
   
   loaderImages();
   
+  var apiUrl = "https://mappcpd-csanz-web-services.herokuapp.com";
+  
   report({
-    api: 'https://api.mappcpd.com/v1/r/modulesbydate', 
+    api: apiUrl + '/v1/r/modulesbydate', 
     target: 'modulesbydate', 
     title: 'Modules By Date',
     dataLabel: '# modules'
   }, "bar");
   
   report({
-    api: 'https://api.mappcpd.com/v1/r/pointsbyrecorddate', 
+    api: apiUrl + '/v1/r/pointsbyrecorddate', 
     target: 'pointsbyrecorddate', 
     title: 'Points by Record Date',
     dataLabel: '# points'
   }, "bar");
   
   report({
-    api: 'https://api.mappcpd.com/v1/r/pointsbyactivitydate', 
+    api: apiUrl + '/v1/r/pointsbyactivitydate', 
     target: 'pointsbyactivitydate', 
     title: 'Points by Activity Date',
     dataLabel: '# points'
